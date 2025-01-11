@@ -1,15 +1,18 @@
+import Client from "./components/Client";
 import Hero from "./components/Hero";
-import Nabvbar from "./components/Nabvbar";
+import Navbar from "./components/Nabvbar";
 
 export default function Home() {
   return (
     <div className="">
-      <Nabvbar/>
-      <main className=" md:mt-[6.8]">
+          <Navbar/>
+      <main className="mt-[6.3rem] md:mt-[6.8rem]">
+       
       <div
-        className="bg-[url('https://forcythe.com/images/header-background.svg')] md:min-h-screen bg-no-repeat"
+        className="bg-[url('https://forcythe.com/images/header-background.svg')] my-10 md:min-h-screen bg-no-repeat"
       >
       <Hero />
+      <Client/>
     </div>
 
       </main>
