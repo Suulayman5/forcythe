@@ -12,6 +12,10 @@ export default {
         dark: '#0a0a0a',
         primary: '#1e90ff',
       },
+      backgroundImage: {
+        'header-background': "url('https://forcythe.com/images/header-background.svg')",
+      },
+      
     },
   },
   plugins: [],
