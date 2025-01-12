@@ -1,6 +1,7 @@
 import Client from "./components/Client";
 import Hero from "./components/Hero";
 import Navbar from "./components/Nabvbar";
+import Stories from "./components/Stories";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       >
       <Hero />
       <Client/>
+      <Stories/>
     </div>
 
       </main>
