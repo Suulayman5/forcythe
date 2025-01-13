@@ -33,7 +33,7 @@ const Stories = () => {
     }, [storiesData.length]); // Include storiesData.length in the dependency array
 
     return (
-        <div className="flex flex-col mb-10 px-8 md:px-28">
+        <div className="flex flex-col px-14 md:px-28 bg-custom1-gradient">
             <div className="text-[2.2rem] leading-[2.5rem] md:text-[2.6rem]  md:leading-[3.5rem]  mb-12 max-w-4xl mx-auto text-center">
                 <p className="">Discover the <span className="text-primary">transformative stories</span> of startups that scaled new heights with us</p>
             </div>

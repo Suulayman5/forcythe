@@ -3,7 +3,7 @@ import Image from "next/image"
 const Client = () => {
   return (
     <div>
-        <div className=" flex justify-center items-center mt-8 md:mt-16 px-8 md:px-28 min-h-[60px] mb-8 ">
+        <div className=" flex justify-center items-center mt-8 md:mt-16 px-8 md:px-28 min-h-[60px]">
             <h2 className="text-[2.5rem] ">Success in <span className="text-primary">Motion</span> -  our Client&apos;s Journey</h2>
         </div>
         <div className="flex flex-col relative overflow-hidden gap-5 bg-gradient-to-b from-transparent via-[rgba(3,5,22,0.6)] to-[rgb(3,5,22)]">

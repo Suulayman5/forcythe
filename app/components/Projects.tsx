@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react"
 const Projects = () => {
   return (
     <>
-        <div className="py-14 md:py-24 bg-custom-gradient">
+        <div className="py-14 md:py-24 bg-custom1-gradient">
             <div className="max-w-[50rem] mx-auto bg-[url('https://forcythe.com/images/arc.svg')] md:bg-[url('https://forcythe.com/images/arc-L.svg')] bg-cover md:bg-contain bg-top bg-no-repeat ">
                 <div className="pt-20 md:pt-52 pb-10 md:pb-20 max-w-xl mx-auto text-center px-5">
                     <div className="mb-14 md:mb-20 max-w-[19rem] md:max-w-md mx-auto">
@@ -31,11 +31,11 @@ const Projects = () => {
                 </div>
             </div>
         </div>
-        <div className="my-20 md:mb-24 px-4 md:px-20">
+        <div className="py-20 px-4 md:px-20 bg-custom-gradient">
             <div className="flex flex-col md:flex-row md:justify-between md:items-center pb-12">
                 {/* Heading Section */}
                 <div className="text-left">
-                    <p className="text-[2.2rem] md:text-[2.6rem] leading-tight mb-4 md:mb-8"> Read our articles,bnews and product blog</p>
+                    <p className="text-[2.2rem] md:text-[2.6rem] leading-tight mb-4 md:mb-8"> Read our articles,news and product blog</p>
                 </div>
 
                 {/* <!-- Button Section --> */}
@@ -109,7 +109,7 @@ const Projects = () => {
                 </div>
             </div>
         </div>
-        <div className="py-10 mt-20 px-4 md:px-20 text-center bg-[#071626] bg-opacity-0 bg-custom2-gradient">
+        <div className="py-10 px-4 md:px-20 text-center bg-[#071626] bg-opacity-0 bg-custom2-gradient">
             <div className="mx-auto max-w-[45rem]">
                 <p className="text-[2rem] leading-[2.5rem] md:text-[2.6rem] mb-6 md:leading-[3rem] ">
                     <span className="text-primary">Ready to scale?</span> <br />

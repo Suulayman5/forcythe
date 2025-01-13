@@ -13,7 +13,7 @@ export default function Home() {
       <main className="mt-[6.3rem] w-full md:mt-[6.8rem]">
        
       <div
-        className="bg-[url('https://forcythe.com/images/header-background.svg')] my-10 md:min-h-screen bg-no-repeat bg-top"
+        className="bg-[url('https://forcythe.com/images/header-background.svg')] md:min-h-screen bg-no-repeat bg-top"
       >
         <Hero />
         <Client/>

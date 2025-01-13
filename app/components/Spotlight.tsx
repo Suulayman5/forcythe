@@ -22,7 +22,7 @@ const Spotlight = () => {
     }
   return (
     <>
-    <div className="flex flex-col px-8 md:px-28 py-20">
+    <div className="flex flex-col px-8 md:px-28 py-20 bg-custom-gradient">
         <div className="mb-10">
             <h1 className="text-3xl md:text-5xl font-bold leading-snug">
                 From <span className="text-primary">Spark</span> to <span className="text-primary">Spotlight</span>: <br />
