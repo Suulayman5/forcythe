@@ -14,15 +14,14 @@ export default function Home() {
       <div
         className="bg-[url('https://forcythe.com/images/header-background.svg')] my-10 md:min-h-screen bg-no-repeat bg-top"
       >
-      <Hero />
-      <Client/>
+        <Hero />
+        <Client/>
       </div>
       <div className="">
-      <Stories/>
-      <Spotlight/>
-      <Projects/>
+        <Stories/>
+        <Spotlight/>
+        <Projects/>
       </div>
-
       </main>
     </div>
   );
