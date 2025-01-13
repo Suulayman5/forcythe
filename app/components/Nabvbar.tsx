@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import Image from "next/image";
+import { Button } from "./Button";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -62,8 +63,8 @@ const Navbar = () => {
       </div>
 
       {/* Call-to-Action Button */}
-      <div className="hidden md:flex bg-white text-dark rounded-3xl p-2 px-4 font-bold items-center justify-center hover:bg-primary transition-colors">
-        Book a Call
+      <div className="hidden md:flex">
+        <Button text="Book a Call"/>
       </div>
 
       {/* Mobile Menu Button */}
