@@ -14,7 +14,11 @@ export default {
       },
       backgroundImage: {
         'header-background': "url('https://forcythe.com/images/header-background.svg')",
-      },
+        'project-background': "url('https://forcythe.com/images/arc.svg')",
+        'project-L-background': "url('https://forcythe.com/images/arc-L.svg')",
+        'custom-gradient': 'linear-gradient(rgb(12, 38, 69) 20%, rgb(3, 5, 22) 70%)',
+        'custom1-gradient': 'linear-gradient(0deg, rgb(12, 38, 69) 20%, rgb(3, 5, 22) 60%)',
+        },
       animation: {
         marquee: "marquee 10s linear infinite",
         marquee1: "marquee1 10s linear infinite",

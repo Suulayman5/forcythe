@@ -1,6 +1,8 @@
 import Client from "./components/Client";
 import Hero from "./components/Hero";
 import Navbar from "./components/Nabvbar";
+import Projects from "./components/Projects";
+import Spotlight from "./components/Spotlight";
 import Stories from "./components/Stories";
 
 export default function Home() {
@@ -15,6 +17,8 @@ export default function Home() {
       <Hero />
       <Client/>
       <Stories/>
+      <Spotlight/>
+      <Projects/>
     </div>
 
       </main>
