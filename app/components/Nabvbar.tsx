@@ -2,9 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu } from "lucide-react";
+import { ArrowRight, Menu } from "lucide-react";
 import Image from "next/image";
-import { Button } from "./Button";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,7 +31,7 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-30 px-8 md:px-28 py-[1.6rem] flex justify-between gap-10 items-center transition-all duration-300 ${
-        isScrolled ? "bg-opacity-10 bg-white text-black" : "bg-opacity-10 text-white"
+        isScrolled ? "bg-opacity-10 bg-white text-white" : "bg-opacity-10 text-white"
       }`}
     >
       {/* Logo and Nav Links */}
@@ -64,7 +63,10 @@ const Navbar = () => {
 
       {/* Call-to-Action Button */}
       <div className="hidden md:flex">
-        <Button text="Book a Call"/>
+            <div className="relative w-fit">
+              <button className="w-fit py-[12px] px-5  flex gap-2 items-center justify-center rounded-full bg-white text-base text-black relative z-10 font-semibold hover:bg-[#064386] group-hover:text-white text-center whitespace-nowrap cursor-pointer hover:shadow-md">Book a Call <ArrowRight className="w-10 h-10"/></button>
+              <div className="w-full h-full absolute top-1.5 right-1.5 z-0 rounded-full border-[1px] border-dashed group-hover:border-[#064386]"></div>
+            </div> 
       </div>
 
       {/* Mobile Menu Button */}

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Button } from "./Button"
+import { ArrowRight } from "lucide-react"
 
 const Projects = () => {
   return (
@@ -115,7 +115,12 @@ const Projects = () => {
                     <span className="text-primary">Ready to scale?</span> <br />
                     &quot;Join successful brands that chose us as their&quot; <span className="text-primary"> growth accelerator</span>
                 </p>
-                <Button text="Book a Call"/>
+                <div className="w-fit mx-auto mb-5">
+                <div className="relative w-fit">
+                <button className="w-fit py-[10px] px-5  flex gap-2 items-center justify-center rounded-full bg-white text-base text-black relative z-10 font-semibold hover:bg-[#064386] group-hover:text-white text-center whitespace-nowrap cursor-pointer hover:shadow-md">Book a Call <ArrowRight className="w-10 h-10"/></button>
+                <div className="w-full h-full absolute top-1.5 right-1.5 z-0 rounded-full border-[1px] border-dashed group-hover:border-[#064386]"></div>
+            </div> 
+            </div>
             </div>
         </div>
 

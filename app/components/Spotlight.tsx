@@ -1,8 +1,25 @@
+"use client"
+
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 
 const Spotlight = () => {
+    const [activeIndex, setActiveIndex] = useState<number | null>(0)
+    const data = [
+        {name: 'Idea', title: "Your vision is unique.", message: "Nurture Your Idea into a Blueprint for Success with our strategic insights and industry expertise. Your vision is unique, let’s us shape it." },
+        {name: 'Design', title: "Crafting the blueprint for success", message: "Design is more than aesthetics, it’s about creating user experiences that resonate and convert. Our design experts shape your vision into a stunning reality." },
+        {name: 'Develop', title: "Turning blueprints into reality.", message: "We breathe life into designs, building robust platforms ready to disrupt markets. Harness the experience of our development team to bring your Concept to Life." },
+        {name: 'Launch', title: "Your launchpad to the market.", message: "Launching is just the beginning, we ensure your product makes a splash and keeps making waves, ensuring a continual customer acquisition." },
+    ]
+
+    const handleClick = (index: number) => {
+        if (activeIndex === index) {
+            setActiveIndex(null); // Close the div if clicked again
+        } else {
+            setActiveIndex(index); // Open the clicked div
+        }
+    }
   return (
     <>
     <div className="flex flex-col px-8 md:px-28 py-20">
@@ -14,23 +31,33 @@ const Spotlight = () => {
         </div>
         <div className="flex flex-col md:flex-row md:justify-between">
             <div className="flex mb-8 basis-1/2">
-                <div className="md:pr-10 w-screen md:w-full">
+            <div className="md:pr-10 w-screen md:w-full">
                     <div className="border-2 border-blue-200 mb-12 rounded-full grid grid-cols-4 p-3.5 gap-1">
-                        <div className="overflow-hidden px-2 md:px-3 py-3 md:py-3.5 rounded-full text-center cursor-pointer transition-all duration-300 hover:bg-blue-200 hover:text-black">Idea</div>
-                        <div className="overflow-hidden px-2 md:px-3 py-3 md:py-3.5 rounded-full text-center cursor-pointer transition-all duration-300 hover:bg-blue-200 hover:text-black">Design</div>
-                        <div className="overflow-hidden px-2 md:px-3 py-3 md:py-3.5 rounded-full text-center cursor-pointer transition-all duration-300 hover:bg-blue-200 hover:text-black">Develop</div>
-                        <div className="overflow-hidden px-2 md:px-3 py-3 md:py-3.5 rounded-full text-center cursor-pointer transition-all duration-300 hover:bg-blue-200 hover:text-black">Launch</div>
+                        {data.map((spot, index) => (
+                            <div key={index} 
+                            className={`overflow-hidden px-2 md:px-3 py-3 md:py-3.5 rounded-full text-center cursor-pointer transition-all duration-300 hover: hover:
+                            ${activeIndex === index ? 'bg-blue-200 text-black' : ''}`}
+                            onClick={() => handleClick(index)} 
+                            >{spot.name}</div>
+                        ))}
                     </div>
                     <div className="">
-                        <div className="text-3xl md:text-4xl font-bold mb-6 md:mb-10">Your vision is unique.</div>
-                        <div className="text-white leading-8 mb-6 md:mb-10">Nuture your idea into a blueprint for success with our strategic insights and 
-                            industry expertise. Your vision is unique, let&apos;s us shape it.
-                        </div>
-                        <button className=" bg-white flex gap-2 text-dark rounded-3xl p-3 px-4 font-bold hover:bg-primary mb-8">
-                            Book a Call <span><ArrowRight/></span>
-                        </button> 
-                    </div>               
-                </div>
+                        {data.map((spot, index) => (
+                            activeIndex === index && (
+                                <div key={index}>
+                                    <div className="text-3xl md:text-4xl font-bold mb-10 md:mb-14">{spot.title}</div>
+                                    <div className="text-white leading-8 mb-6 md:mb-10">{spot.message}</div>
+                                    <div className="relative w-fit">
+                                        <button className="w-fit py-[12px] px-5  flex gap-2 items-center justify-center rounded-full bg-white text-base text-black relative z-10 font-semibold hover:bg-[#064386] group-hover:text-white text-center whitespace-nowrap cursor-pointer hover:shadow-md">Book a Call <ArrowRight className="w-10 h-10"/></button>
+                                        <div className="w-full h-full absolute top-1.5 right-1.5 z-0 rounded-full border-[1px] border-dashed group-hover:border-[#064386]"></div>
+                                    </div> 
+
+                                </div>
+                            )
+                        ))}
+                    </div>
+                    
+            </div>
             </div>
             <div className="w-fit h-fit">
                 <Image src='https://forcythe.com/images/camera-man.svg' width={500} height={50} alt='image'/>

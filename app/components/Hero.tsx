@@ -1,4 +1,4 @@
-import { Button } from "./Button";
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
     return (
@@ -14,8 +14,10 @@ const Hero = () => {
                      We&apos;re the architects of digital excellence across industries. We redefine business with cutting-edge digital strategies that invoke sector-wide transformation.
                 </p>
             </div>
-            <Button text="Book a Call"/>
-            
+            <div className="relative w-fit">
+              <button className="w-fit py-[12px] px-5  flex gap-2 items-center justify-center rounded-full bg-white text-base text-black relative z-10 font-semibold hover:bg-[#064386] group-hover:text-white text-center whitespace-nowrap cursor-pointer hover:shadow-md">Book a Call <ArrowRight className="w-10 h-10"/></button>
+              <div className="w-full h-full absolute top-1.5 right-1.5 z-0 rounded-full border-[1px] border-dashed group-hover:border-[#064386]"></div>
+            </div>      
         </div>
       </section>
     );
