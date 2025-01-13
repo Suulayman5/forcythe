@@ -31,8 +31,8 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-30 px-4 md:px-20 py-[1.8rem] flex justify-between items-center transition-all duration-300 ${
-        isScrolled ? "backdrop-blur-md bg-opacity-10 bg-white text-dark" : "bg-opacity-10 text-white"
+      className={`fixed top-0 left-0 w-full z-30 px-8 md:px-28 py-[1.6rem] flex justify-between gap-10 items-center transition-all duration-300 ${
+        isScrolled ? "bg-opacity-10 bg-white text-black" : "bg-opacity-10 text-white"
       }`}
     >
       {/* Logo and Nav Links */}
