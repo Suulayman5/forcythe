@@ -1,4 +1,5 @@
 import Client from "./components/Client";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Nabvbar";
 import Projects from "./components/Projects";
@@ -23,6 +24,9 @@ export default function Home() {
         <Projects/>
       </div>
       </main>
+      <footer className="bg-custom3-gradient ">
+        <Footer/>
+      </footer>
     </div>
   );
 }

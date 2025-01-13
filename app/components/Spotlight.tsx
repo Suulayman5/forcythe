@@ -5,7 +5,7 @@ import React from 'react'
 const Spotlight = () => {
   return (
     <>
-    <div className="flex flex-col mb-10 mx-8 md:mx-20 py-20">
+    <div className="flex flex-col mx-8 md:mx-20 py-20">
         <div className="mb-10">
             <h1 className="text-3xl md:text-5xl font-bold leading-snug">
                 From <span className="text-primary">Spark</span> to <span className="text-primary">Spotlight</span>: <br />

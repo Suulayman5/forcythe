@@ -109,7 +109,7 @@ const Projects = () => {
                 </div>
             </div>
         </div>
-        <div className="py-10 my-20 md:mb-24 px-4 md:px-20 text-center bg-[#071626] bg-opacity-0 bg-custom2-gradient">
+        <div className="py-10 mt-20 px-4 md:px-20 text-center bg-[#071626] bg-opacity-0 bg-custom2-gradient">
             <div className="mx-auto max-w-[45rem]">
                 <p className="text-[2rem] leading-[2.5rem] md:text-[2.6rem] mb-6 md:leading-[3rem] ">
                     <span className="text-primary">Ready to scale?</span> <br />
